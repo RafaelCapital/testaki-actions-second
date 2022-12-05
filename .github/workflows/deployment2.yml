@@ -19,7 +19,6 @@ jobs:
         run: yarn ci
       - name: Test code
         run: yarn test
-  depoloy:
   deploy:
     runs-on: ubuntu-latest
     steps:
