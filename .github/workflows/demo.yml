@@ -28,7 +28,7 @@ jobs:
       - name: Upload to artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: vale-dist-files
+          name: dist-files
           path: dist
           # path: |
           #   dist
@@ -40,7 +40,7 @@ jobs:
       - name: Piase to build artifact
         run: actions/download-artifact@v3
         with:
-          name: vale-dist-files
+          name: dist-file
       - name: Output to kimeno (content)
         run: ls
       - name: Deploy
