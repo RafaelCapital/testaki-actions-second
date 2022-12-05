@@ -40,7 +40,7 @@ jobs:
       - name: Piase to build artifact
         uses: actions/download-artifact@v3
         with:
-          name: dist-file
+          name: dist-files
       - name: Output to kimeno (content)
         run: ls
       - name: Deploy
