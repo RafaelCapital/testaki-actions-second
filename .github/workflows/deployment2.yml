@@ -1,0 +1,33 @@
+name: Deployment Excercise 2 :)
+on: [push]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install dependencies :)
+        run: yarn ci
+      - name: Lint :)
+        run: yarn lint
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install dependencies :)
+        run: yarn ci
+      - name: Test code
+        run: yarn test
+  depoloy:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install dependencies :)
+        run: yarn ci
+      - name: Build Code :)
+        run: yarn build
+      - name: Deploy code
+        run: echo "Deployingggg"
