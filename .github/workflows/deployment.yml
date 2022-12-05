@@ -7,7 +7,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependencies :)
-        run: yarn ci
+        run: yarn
       - name: Lint :)
         run: yarn lint
       - name: Test code
