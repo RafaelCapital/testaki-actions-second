@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Piase to build artifact
-        run: actions/download-artifact@v3
+        uses: actions/download-artifact@v3
         with:
           name: dist-file
       - name: Output to kimeno (content)
